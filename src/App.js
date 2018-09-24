@@ -30,6 +30,7 @@ class App extends Component {
     // PREVENTS BROWSER REFRESH INORDER TO KEEP USER INPUT DATA
     const city = e.target.elements.city.value
     const apiKey = '3288cf10f92e639d55bc53454df165a0'
+    // AXIOS AUTOMATICALLY RETURNS A PROMISE IN JSON FORMAT
     await Axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
         .then(response => {
           // parse data into main info
