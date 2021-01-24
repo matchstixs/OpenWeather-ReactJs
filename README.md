@@ -13,7 +13,7 @@ On the Terminal run:
 npm run start
 ```
 
-#### TO DO
+#### To do
 
 Work on UI
 
