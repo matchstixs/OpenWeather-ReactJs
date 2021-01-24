@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import './App.css';
 import Form from './components/Form';
 import Weather from './components/Weather';
 
@@ -51,7 +50,9 @@ class App extends Component {
     return (
       <div className="App">
       <h2 className="App-title">Weather App</h2>
+        <div className="input">
         < Form loadWeather={this.getWeather} />
+        </div>
         <div className="dataOutput">
           < Weather 
             location = {this.state.location}
@@ -61,9 +62,11 @@ class App extends Component {
             conditionSummary = {this.state.conditionSummary}
           />
         </div>
+        <div className="foot">    
+          <i>Powered by OpenWeatherMap</i>
+        </div>
       </div>
-    );
-  };
+    )};
 
 }
 

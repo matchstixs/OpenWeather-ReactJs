@@ -4,6 +4,10 @@ Single page Weather app built on React using Open Weather Map API
 
 -Displays the weather conditions of the user's city of choice.
 
+#### V.2
+
+-Integrated web responsiveness
+-Implemented basic interface
 
 #### Deploy the site by running `npm run start`
 
@@ -15,6 +19,6 @@ npm run start
 
 #### To do
 
-Work on UI
+Improve U.I
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)

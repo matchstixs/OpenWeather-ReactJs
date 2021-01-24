@@ -1,20 +1,3 @@
-
-.app {
-  margin: 0;
-  padding: 0px;
-  background-color: #2b6777
-}
-
-.dataOutput {
-  background-color: #c8d8e4; 
-  height: 60px
-}
-
-/* background-color: #c8d8e4; */
-
-
-
-
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +6,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+input[type=text] {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border: 10px;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: #2b6777;
+  border: 15px;
+  padding: 50px;
+  margin: auto;
+  width: 50%;
+}
+
+.dataOutput {
+  background-color: #c8d8e4; 
+  height: 100px
+}
+
+.foot {
+  position: absolute;
+  bottom: 35%;
 }
