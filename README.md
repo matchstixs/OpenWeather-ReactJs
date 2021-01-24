@@ -13,4 +13,8 @@ On the Terminal run:
 npm run start
 ```
 
+#### TO DO
+
+Work on UI
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
