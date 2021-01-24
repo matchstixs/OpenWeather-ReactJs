@@ -1,5 +1,29 @@
+
+.app {
+  margin: 0;
+  padding: 0px;
+  background-color: #2b6777
+}
+
+.dataOutput {
+  background-color: #c8d8e4; 
+  height: 60px
+}
+
+/* background-color: #c8d8e4; */
+
+
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

@@ -3,11 +3,11 @@ import React from 'react'
 // IT RENDERS AN INPUT BOX FOR USER INPUT
 const Form = (props) => {
     return(
-        <div>
+
             <form onSubmit={props.loadWeather}>
-            <input type='text' name='city' placeholder="CITY" />
+            <input type='text' name='city' placeholder="CITY / ZIPCODE" />
             </form>
-        </div>
+
     );
 }
 

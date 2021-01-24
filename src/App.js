@@ -4,6 +4,7 @@ import './App.css';
 import Form from './components/Form';
 import Weather from './components/Weather';
 
+
 // COMPONENTS GO HERE
 // STATE ALSO LIVES HERE
 // ALONG WITH API CALL, PARSE, ETC
@@ -35,6 +36,7 @@ class App extends Component {
         .then(response => {
           // parse data into main info
           const forecast = response.data
+          console.log(forecast)
           this.setState({
             location: forecast.city.name,
             temperature: forecast.list[0].main.temp,
@@ -48,12 +50,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Weather App</h1>
-          <h3>Uses React and Open Weather Api</h3>
-          <h5>To display the weather forecast for a particular city</h5>
-        </header>
-          < Form loadWeather={this.getWeather} />
+      <h2 className="App-title">Weather App</h2>
+        < Form loadWeather={this.getWeather} />
+        <div className="dataOutput">
           < Weather 
             location = {this.state.location}
             temperature = {this.state.temperature}
@@ -61,6 +60,7 @@ class App extends Component {
             conditions = {this.state.conditions}
             conditionSummary = {this.state.conditionSummary}
           />
+        </div>
       </div>
     );
   };
